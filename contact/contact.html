@@ -4,34 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
-  <style>
-    .dark-mode {
-      background-color: #121212; /* Dark background for the whole page */
-      color: #e0e0e0; /* Light text color */
-    }
-    .dark-mode a {
-      color: #bb86fc; /* Light color for links */
-    }
-    .dark-mode input, .dark-mode textarea {
-      background-color: #333333; /* Dark background for inputs */
-      color: #e0e0e0; /* Light text color for inputs */
-      border-color: #555555; /* Darker border for inputs */
-    }
-    .dark-mode .bg-white {
-      background-color: #1e1e1e; /* Dark background for sections */
-    }
-    .dark-mode .bg-amber-400 {
-      background-color: #1f1f1f; /* Darker background for the navbar */
-    }
-    .dark-mode .bg-amber-600 {
-      background-color: #121212; /* Dark background for gradients */
-    }
-  </style>
+  
 </head>
 
 <body class="max-w-[2000px] mx-auto text-neutral-900 bg-white">
@@ -47,13 +20,11 @@
       </button>
       <div role="menubar" class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
         <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/html/index.html">Home</a>
-        <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors lg:mr-auto" href="/">Contact</a>
-        <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/login.html">Login</a>
+        <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors lg:mr-auto" href="/contact/contact.html">Contact</a>
+        <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/contact/login.html">Login</a>
         <a role="menuitem" class="py-2 px-6 bg-teal-900 text-white shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400" href="/contact/signup.html">Sign Up</a>
       </div>
-      <button onclick="toggleDarkMode()" class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-full ring-offset-4 ring-offset-amber-400 p-2 text-neutral-900 hover:text-neutral-600 transition-colors" aria-label="Toggle Dark Mode">
-        Toggle Dark Mode
-      </button>
+      
     </div>
   </nav>
 
